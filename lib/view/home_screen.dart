@@ -6,12 +6,11 @@ import 'package:flutter/material.dart';
 class ScreenHome extends StatelessWidget {
   const ScreenHome({Key? key}) : super(key: key);
 
-  // final values = Get.put(AuthController());
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.blueGrey,
         title: const Text('Data'),
       ),
       body: SafeArea(

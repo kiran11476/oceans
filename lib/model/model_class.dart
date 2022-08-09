@@ -5,6 +5,7 @@
 import 'package:meta/meta.dart';
 import 'dart:convert';
 
+//model class
 ModelClass modelClassFromJson(String str) =>
     ModelClass.fromJson(json.decode(str));
 
