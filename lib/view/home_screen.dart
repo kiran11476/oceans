@@ -36,9 +36,9 @@ class _ScreenHomeState extends State<ScreenHome> {
                   if (snapshot.hasData) {
                     final List<Entry> datas =
                         snapshot.data!.entries!.where((element) {
-                      if (element.api
-                          .toLowerCase()
-                          .contains(search.text.toLowerCase())) {
+                      if (element.api.toLowerCase().contains(
+                            search.text.toLowerCase(),
+                          )) {
                         return true;
                       }
                       return false;
@@ -60,7 +60,9 @@ class _ScreenHomeState extends State<ScreenHome> {
                               ]);
                         });
                   }
-                  return const Center(child: CircularProgressIndicator());
+                  return const Center(
+                    child: CircularProgressIndicator(),
+                  );
                 }),
           ],
         ),
